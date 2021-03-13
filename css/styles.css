@@ -1,0 +1,95 @@
+/* || COLORS */
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-1: hsl(0, 0%, 20%);
+  --clr-gray-2: hsl(0, 0%, 31%);
+  --clr-gray-3: hsl(0, 0%, 51%);
+  --clr-gray-4: hsl(0, 0%, 74%);
+  --clr-gray-5: hsl(0, 0%, 88%);
+  --clr-gray-6: hsl(0, 0%, 95%);
+  --clr-blue: hsl(214, 84%, 56%);
+}
+
+/* || FONTS */
+
+:root {
+  --ff-mt: "Montserrat", sans-serif;
+  --fw-rg: 400;
+  --fw-md: 500;
+  --fw-bt: 600;
+  --fw-xb: 700;
+  --fs-xs: 1.2rem;
+  --fs-sm: 1.6rem;
+  --fs-md: 1.8rem;
+  --fs-lg: 2.4rem;
+}
+
+/* || RESETS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+img,
+i[class] {
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  font: inherit;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* || BODY */
+
+body {
+  font: var(--fw-md) var(--fs-md) var(--ff-mt);
+  background-color: var(--clr-gray-6);
+  width: calc(100% - (clamp(1.2rem, 12vw, 19.7rem) * 2));
+  margin: auto;
+  padding: 7rem 0;
+}
