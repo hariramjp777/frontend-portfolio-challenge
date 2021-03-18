@@ -491,6 +491,10 @@ a.button.outline {
   gap: 1.1rem;
 }
 
+.attribution {
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   html {
     font-size: 2vw;
@@ -592,5 +596,8 @@ a.button.outline {
   }
   .hobbies-container .hobby .hobby-image {
     height: 15rem;
+  }
+  .attribution {
+    grid-column: 1/3;
   }
 }
