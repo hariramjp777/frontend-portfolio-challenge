@@ -94,12 +94,8 @@ body {
   width: calc(100% - (clamp(1.2rem, 10vw, 19.7rem) * 2));
   margin: auto;
   padding: 7rem 0;
-  /* display: flex; */
-  /* flex-direction: column; */
   gap: 3rem;
   display: grid;
-  /*gap: 4.2rem;
-  grid-template-columns: calc(40% - 2.1rem) calc(60% - 2.1rem); */
 }
 
 h1,
@@ -223,6 +219,23 @@ header .profile-container {
 .skills .tech p {
   font-size: var(--fs-sm);
   color: var(--clr-gray-2);
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23.6rem;
+  height: 0.96rem;
+}
+
+progress[value]::-webkit-progress-bar {
+  border-radius: 1.2rem;
+  background-color: var(--clr-gray-4);
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--clr-blue);
+  border-radius: 1.2rem;
 }
 
 .blog-container {
@@ -357,6 +370,7 @@ header .profile-container {
 .hobby-image img {
   width: 100%;
   border-radius: inherit;
+  object-fit: cover;
 }
 
 .hobby h3 {
@@ -577,8 +591,5 @@ a.button.outline {
   }
   .hobbies-container .hobby .hobby-image {
     height: 15rem;
-  }
-  .hobby-image img {
-    object-fit: cover;
   }
 }
